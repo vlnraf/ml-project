@@ -5,18 +5,18 @@ import numpy as np
 
 def plot_loss(history, val=True):
     plt.title('Loss plot')
-    plt.plot(history.history['loss'])
+    plt.plot(history['loss'])
     if(val):
-        plt.plot(history.history['val_loss'], '--')
+        plt.plot(history['val_loss'], '--')
     plt.xlabel('epochs')
     plt.ylabel('loss')
     plt.legend(['train','val'], loc='upper right')
 
 def plot_accuracy(history, val=True):
     plt.title('Accuracy plot')
-    plt.plot(history.history['accuracy'])
+    plt.plot(history['acc'])
     if(val):
-        plt.plot(history.history['val_accuracy'], '--')
+        plt.plot(history['val_acc'], '--')
     plt.xlabel('epochs')
     plt.ylabel('Accuracy')
     plt.legend(['train','val'], loc='lower right')
