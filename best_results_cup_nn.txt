@@ -1,0 +1,20 @@
+Results wrt: grid_results_cup_nn_v1.csv 
+Grid on: {"batch_size": [64, 128, 256, 1219], "epochs": [300], "learn_rate": [0.001, 0.01, 0.1, 0.3], "momentum": [0.0, 0.2, 0.4, 0.9], "neurons_layer_1": [40, 80, 120], "init_mode": ["glorot_uniform"], "activation": ["relu"], "weight_decay": [0.1, 0.01, 0.001, 0.0001], "nesterov": [false]} 
+Best: -3.2664703528086343 using {'activation': 'relu', 'batch_size': 256, 'epochs': 300, 'init_mode': 'glorot_uniform', 'learn_rate': 0.01, 'momentum': 0.9, 'nesterov': False, 'neurons_layer_1': 80, 'weight_decay': 0.0001} 
+
+Results wrt: grid_results_cup_nn_v2.csv 
+Grid on: {"batch_size": [64, 128, 256, 1219], "epochs": [300], "learn_rate": [0.001, 0.01, 0.1, 0.3], "momentum": [0.0, 0.2, 0.4, 0.9], "neurons_layer_1": [40, 80, 120], "init_mode": ["glorot_uniform"], "activation": ["relu"], "weight_decay": [0.1, 0.01, 0.001, 0.0001], "nesterov": [true]} 
+Best: -3.282038609186808 using {'activation': 'relu', 'batch_size': 64, 'epochs': 300, 'init_mode': 'glorot_uniform', 'learn_rate': 0.01, 'momentum': 0.9, 'nesterov': True, 'neurons_layer_1': 40, 'weight_decay': 0.0001} 
+
+Results wrt: grid_results_cup_nn_v3.csv 
+Grid on: {"batch_size": [128, 256, 1219], "epochs": [500], "learn_rate": [0.0001, 0.001, 0.01, 0.1], "momentum": [0.0, 0.2, 0.4, 0.8, 0.9], "neurons_layer_1": [50, 70, 130], "init_mode": ["glorot_uniform"], "activation": ["relu"], "weight_decay": [0.1, 0.01, 0.001, 0.0001], "nesterov": [true], "neurons_layer_2": [20, 30, 45]} 
+Best: -3.213296333948771 using {'activation': 'relu', 'batch_size': 128, 'epochs': 500, 'init_mode': 'glorot_uniform', 'learn_rate': 0.001, 'momentum': 0.9, 'nesterov': True, 'neurons_layer_1': 130, 'neurons_layer_2': 30, 'weight_decay': 0.0001} 
+
+Results wrt: grid_results_cup_nn_v4.csv 
+Grid on: {"batch_size": [64, 128, 1219], "epochs": [1000], "learn_rate": [0.0001, 0.001, 0.01], "momentum": [0.4, 0.8, 0.9], "neurons_layer_1": [130, 70], "init_mode": ["glorot_uniform"], "activation": ["relu", "tanh", "sigmoid"], "weight_decay": [0.01, 0.001, 0.0001], "nesterov": [true], "neurons_layer_2": [30]} 
+Best: -2.826543092727661 using {'activation': 'sigmoid', 'batch_size': 128, 'epochs': 1000, 'init_mode': 'glorot_uniform', 'learn_rate': 0.01, 'momentum': 0.9, 'nesterov': True, 'neurons_layer_1': 130, 'neurons_layer_2': 30, 'weight_decay': 0.0001} 
+
+Results wrt: grid_results_cup_nn_v5.csv 
+Grid on: {"batch_size": [32, 64, 128], "epochs": [1000], "learn_rate": [0.0001, 0.001, 0.01], "momentum": [0.7, 0.8, 0.9, 1], "neurons_layer_1": [130, 70], "init_mode": ["glorot_uniform"], "activation": ["tanh", "sigmoid"], "weight_decay": [0.001, 0.0001, 0.0003, 1e-05], "nesterov": [true], "neurons_layer_2": [30]} 
+Best: -2.752460161844889 using {'activation': 'sigmoid', 'batch_size': 128, 'epochs': 1000, 'init_mode': 'glorot_uniform', 'learn_rate': 0.01, 'momentum': 0.9, 'nesterov': True, 'neurons_layer_1': 130, 'neurons_layer_2': 30, 'weight_decay': 1e-05} 
+
