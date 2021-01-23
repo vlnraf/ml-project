@@ -24,14 +24,14 @@ def plot_accuracy(history, val=True):
 def load_monk(dataset="1"):
     X, y = fetch_openml('monks-problems-'+dataset, return_X_y=True)
     y = y.astype(np.float32)
-
+    # X = X.to_numpy()
+    # y = y.to_numpy()
     if(dataset =="1"):
         Xtrain = OneHotEncoder(sparse=False).fit_transform(X[:124])
         Xtest = OneHotEncoder(sparse=False).fit_transform(X[124:])
 
         ytrain, ytest = y[:124], y[124:]
-        ytrain = ytrain.values
-        ytest = ytest.values
+        
         ytrain = ytrain.reshape(ytrain.shape[0], 1)
         ytest = ytest.reshape(ytest.shape[0], 1)
 
@@ -40,8 +40,7 @@ def load_monk(dataset="1"):
         Xtest = OneHotEncoder(sparse=False).fit_transform(X[169:])
 
         ytrain, ytest = y[:169], y[169:]
-        ytrain = ytrain.values
-        ytest = ytest.values
+        
         ytrain = ytrain.reshape(ytrain.shape[0], 1)
         ytest = ytest.reshape(ytest.shape[0], 1)
 
@@ -50,8 +49,7 @@ def load_monk(dataset="1"):
         Xtest = OneHotEncoder(sparse=False).fit_transform(X[122:])
 
         ytrain, ytest = y[:122], y[122:]
-        ytrain = ytrain.values
-        ytest = ytest.values
+        
         ytrain = ytrain.reshape(ytrain.shape[0], 1)
         ytest = ytest.reshape(ytest.shape[0], 1)
 
