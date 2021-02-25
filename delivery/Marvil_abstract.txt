@@ -1,0 +1,3 @@
+We used a mini-batch gradient descent with Nesterov momentum and weight-decay as regularization.
+For the selection of the best model, we decided to use k-fold cross validation with k equals three.
+For the final model we have taken an average of ten different trainings of the networks.
